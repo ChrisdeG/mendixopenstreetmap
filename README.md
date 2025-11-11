@@ -1,0 +1,2 @@
+# mendixopenstreetmap
+Mendix openstreetmap widget

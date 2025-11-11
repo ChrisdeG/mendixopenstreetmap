@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="lowcodeconnect.openstreetmap.Openstreetmap" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Openstreetmap</name>
+    <description>Leaflet</description>
+<icon>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</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="zoom" type="expression" required="true" defaultValue='13'>
+                <caption>Zoom</caption>
+                <description>Zoom value 0=world 18=detailed</description>
+                <returnType type="Integer"/>
+            </property>
+            <property key="centerlatitude" type="expression" required="false">
+                <caption>Center latitude</caption>
+                <description>Center latitude</description>
+                <returnType type="Decimal"/>
+            </property>
+            <property key="centerlongitude" type="expression" required="false">
+                <caption>Center longitude</caption>
+                <description>Center longitude</description>
+                <returnType type="Decimal"/>
+            </property>
+            <property key="height" type="expression" required="true" defaultValue='80vh'>
+                <caption>Height</caption>
+                <description>Use fixed px or 80vh for 80% of viewheight</description>
+                <returnType type="String"/>
+            </property>
+            <property key="width" type="expression" required="true" defaultValue='100%'>
+                <caption>Width</caption>
+                <description>Use fixed px or 80vh for 80% of viewheight</description>
+                <returnType type="String"/>
+            </property>
+            <property key="scrollwheelzoom" type="boolean" required="true" defaultValue="false">
+                <caption>Scroll wheel zoom</caption>
+                <description>Use the scroll wheel to scroll</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Routes">
+            <property key="routesentity" type="datasource" isList="true" required="true">
+                <caption>Routes entity</caption>
+                <description>Datasource containing routes</description>
+            </property>
+            <property key="routecolor" type="expression" dataSource="routesentity">
+                <caption>Color</caption>
+                <description>Color of the route</description>
+                <returnType type="String" />
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Points">
+            <property key="pointsentity" type="datasource" isList="true" required="true">
+                <caption>Waypoints entity</caption>
+                <description>Waypoints of a route, which should have latitude and longitude attributes.</description>
+            </property>
+            <property key="pointstoroute" type="association" dataSource="pointsentity" selectableObjects="routesentity">
+                <caption>Association to routes</caption>
+                <description>Assocation to route</description>
+                <associationTypes>
+                    <associationType name="Reference" />
+                    <associationType name="ReferenceSet"/>
+                </associationTypes>
+            </property>
+            <property key="lonattribute" type="attribute" dataSource="pointsentity" required="true">
+                <caption>Longitude attribute</caption>
+                <description>Attribute containing the longitude</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="latattribute" type="attribute" dataSource="pointsentity" required="true">
+                <caption>Latitude attribute</caption>
+                <description>Attribute containing the latitude</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="pointsortorderattr" type="attribute" dataSource="pointsentity" required="true">
+                <caption>Order attribute</caption>
+                <description>Sorting the waypoints</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onClickAction" type="action" required="false">
+                <caption>On click</caption>
+                <description>When the map is clicked</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Markers">
+            <property key="markersentity" type="datasource" isList="true" required="false">
+                <caption>Markers entity</caption>
+                <description>Markers</description>
+            </property>
+            <property key="markerlonattr" type="attribute" dataSource="markersentity" required="false">
+                <caption>Longitude attribute</caption>
+                <description>Attribute containing the longitude</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="markerlatattr" type="attribute" dataSource="markersentity" required="true">
+                <caption>Latitude attribute</caption>
+                <description>Attribute containing the latitude</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="markercolorattr" type="attribute" dataSource="markersentity" required="false">
+                <caption>Color attribute</caption>
+                <description>Default blue, Allowed values are blue, gold, red, green, orange, yellow, violet, grey, black</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="markerlabelattr" type="attribute" dataSource="markersentity" required="false">
+                <caption>Label attribute</caption>
+                <description>Attribute containing the label of the marker</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="markerAction" type="action" dataSource="markersentity" required="false">
+                <caption>On click marker</caption>
+                <description>Action when the marker is clicked</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Add marker">
+            <property key="lonclickattr" type="attribute" required="false">
+                <caption>Longitude attribute</caption>
+                <description>Attribute containing the longitude for added Marker</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="latclickattr" type="attribute" required="false">
+                <caption>Latitude attribute</caption>
+                <description>Attribute containing the latitude for added Marker</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
