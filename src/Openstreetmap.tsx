@@ -42,8 +42,8 @@ export function Openstreetmap(props: OpenstreetmapContainerProps): ReactElement 
         const markers: MarkerData[] = [];
         const linecolors: string[] = [];
         const routeIndexMap = new Map<string, number>();
-        props.routesentity.items?.forEach((route, index) => {
-            const color = props.routecolor.get(route).value?.toString();
+        props.routesentity?.items?.forEach((route, index) => {
+            const color = props.routecolor?.get(route).value?.toString();
             linecolors.push(color ? color : "blue");
             if (route.id) {
                 routeIndexMap.set(route.id, index);
@@ -60,18 +60,18 @@ export function Openstreetmap(props: OpenstreetmapContainerProps): ReactElement 
             }
         });
 
-        if (props.pointsentity.items) {
+        if (props.pointsentity?.items) {
             const sortedItems = props.pointsentity.items.sort((a, b) => {
-                const orderA = Number(props.pointsortorderattr.get(a).value);
-                const orderB = Number(props.pointsortorderattr.get(b).value);
+                const orderA = Number(props.pointsortorderattr?.get(a).value);
+                const orderB = Number(props.pointsortorderattr?.get(b).value);
                 return orderA - orderB; // ascending order
             });
 
             sortedItems.forEach(e => {
-                const lon = Number(props.lonattribute.get(e).value);
-                const lat = Number(props.latattribute.get(e).value);
+                const lon = Number(props.lonattribute?.get(e).value);
+                const lat = Number(props.latattribute?.get(e).value);
                 if (!isNaN(lat) && !isNaN(lon)) {
-                    const routeRef = props.pointstoroute.get(e).value;
+                    const routeRef = props.pointstoroute?.get(e).value;
                     if (routeRef && typeof routeRef === "object" && "id" in routeRef) {
                         const routeIndex = routeIndexMap.get(routeRef.id);
                         if (routeIndex !== undefined) {
