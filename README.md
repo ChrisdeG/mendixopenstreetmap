@@ -22,7 +22,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 - Small footprint, only 250KB
 
 
-** Usage**
+**Usage**
 
 - Add the **OpenStreetMap** widget to a **data view** or **context page** in Mendix Studio Pro.
 - Configure the **required data sources** for routes, points, and (optionally) markers.
@@ -30,9 +30,9 @@ Use it to visualize paths, locations, and routes directly from your domain model
 - Set zoom level, width, and height to customize appearance.
 - (Optional) Configure actions for map click or marker click events.
 
-** Configuration**
+**Configuration**
 
-** General**
+**General**
 
 | Property | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-** Routes**
+**Routes**
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -54,7 +54,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-** Points (Waypoints)**
+**Points (Waypoints)**
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -66,7 +66,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-**⚡ Events**
+**Events**
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -74,7 +74,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-**📌 Markers**
+**Markers**
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-**➕** **Add Marker (on Map Click)**
+**Add Marker (on Map Click)**
 
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-**💡 Tips**
+**Tips**
 
 *   Use **Decimal** attributes for coordinates to ensure precision.
 *   To dynamically add markers, bind marker click latitude and longitude to a persistable entity.
@@ -111,7 +111,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-** Dependencies**
+**Dependencies**
 
 *   **Leaflet.js**  https://react-leaflet.js.org/
 *   **Openstreemap** https://www.openstreetmap.org/copyright 
@@ -122,7 +122,7 @@ Use it to visualize paths, locations, and routes directly from your domain model
 
 * * *
 
-**🪪** **License**
+**License**
 
 Creative Commons © 2025 — _LowCodeConnect_  
 

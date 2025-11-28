@@ -24,17 +24,13 @@ export function Openstreetmap(props: OpenstreetmapContainerProps): ReactElement 
     const [markers, setMarkers] = useState<MarkerData[]>([]);
     const [lineColors, setLineColors] = useState<string[]>([]);
 
-    const [center, setCenter] = useState<CenterData>([
-        props.centerlatitude?.value ? Number(props.centerlatitude?.value) : 51.926517,
-        props.centerlongitude?.value ? Number(props.centerlongitude?.value) : 4.462456
-    ]);
+    const [center, setCenter] = useState<CenterData>([51.926517, 4.462456]);
 
     useEffect(() => {
-        const lat = Number(props.centerlatitude?.value?.toNumber());
-        const lon = Number(props.centerlongitude?.value);
-        if (!isNaN(lat) && !isNaN(lon)) {
-            setCenter([lat, lon]);
-        }
+        setCenter([
+            props.centerlatitude?.status === "available" ? Number(props.centerlatitude.value) : 51.926517,
+            props.centerlongitude?.status === "available" ? Number(props.centerlongitude.value) : 4.462456
+        ]);
     }, [props.centerlatitude, props.centerlongitude]);
 
     useEffect(() => {
@@ -121,9 +117,9 @@ export function Openstreetmap(props: OpenstreetmapContainerProps): ReactElement 
         <div>
             <LeafletMap
                 center={center}
-                zoom={props.zoom ? props.zoom?.value?.toNumber() : 13}
-                height={props.height ? props.height.value : ""}
-                width={props.width ? props.width.value : ""}
+                zoom={props.zoom && props.zoom.status === "available" ? props.zoom?.value?.toNumber() : 13}
+                height={props.height && props.height.status === "available" ? props.height.value : ""}
+                width={props.width && props.width.status === "available" ? props.width.value : ""}
                 markers={markers}
                 multipolyline={multipolyline}
                 linecolors={lineColors}
