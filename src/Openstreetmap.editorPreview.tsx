@@ -1,5 +1,5 @@
 import { ReactElement, createElement } from "react";
-import { OpenstreetmapPreviewProps } from "../typings/OpenstreetmapProps";
+//import { OpenstreetmapPreviewProps } from "../typings/OpenstreetmapProps";
 import leafletImg from "./ui/img/leaflet.png";
 
 function parentInline(node?: HTMLElement | null): void {
@@ -8,7 +8,7 @@ function parentInline(node?: HTMLElement | null): void {
         node.parentElement.parentElement.style.display = "inline-block";
     }
 }
-
+/*
 function transformProps(props: OpenstreetmapPreviewProps): OpenstreetmapPreviewProps {
     return {
         translate(text: string) {
@@ -43,9 +43,8 @@ function transformProps(props: OpenstreetmapPreviewProps): OpenstreetmapPreviewP
         centerlongitude: "4.462456"
     };
 }
-
-export function preview(props: OpenstreetmapPreviewProps): ReactElement {
-    console.log("propsxyz", transformProps(props));
+*/
+export function preview(): ReactElement {
     return (
         <div ref={parentInline}>
             <img src={leafletImg} />
